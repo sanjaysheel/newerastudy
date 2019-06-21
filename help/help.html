@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script>
+        $('document').ready(function(){
+        $('.submit').click(Function(event){
+                event.preventDefault();
+                console.log('clicked button');
+                var email = $('.email').val();
+                var subject = $('.subject').val();
+                var message = $('.message').val();
+        statusEln.empty();
+                if(email.length>5&& emial.includes('@')%% email.includes('.')){
+                    console.log('email is valid ');
+                }else{
+                    console.log('email is not sent');
+                }
+
+                         });
+});
+
+    </script>
+    <style>
+     label, input , textarea{
+          display: block;
+      }
+        div.emailbox{
+            margin-right:40%;
+            margin-left:40%;
+            margin-top: 7%;
+
+        }
+        body{
+            display: block;
+            background-image;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark alin ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html"> <img src="../photos/logo.png" alt="Logo" style="width:170px; height=200px;"></a>
+
+        <!-- Links -->
+      	<ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">home</a>
+          </li>
+          <li class="nav-item dropdown">
+      		<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tutorials</a>
+              <div class="dropdown-menu">
+                     <a class="dropdown-item" href="../tutorial/C/C-home.html">C</a>
+                     <a class="dropdown-item" href="../tutorial/CPP/CPP-home.html">Cpp</a>
+      	             <a class="dropdown-item" href="../tutorial/python/python_home.html">Python</a>
+      	             <a class="dropdown-item" href="../tutorial/julia/julia-home.html">Julia</a>
+      	             <a class="dropdown-item" href="../tutorial/Java/java-home.html">Java</a>
+                     <a class="dropdown-item" href="../tutorial/ruby/ruby-home.html">Ruby</a>
+      	             <a class="dropdown-item" href="../tutorial/javascript/javascript-home.html">Javascript</a>
+      	             <a class="dropdown-item" href="../tutorial/html/html-thome.html">Html</a>
+      	             <a class="dropdown-item" href="../tutorial/css/css-home.html">css</a>
+                     <a class="dropdown-item" href="../tutorial/Algorithm/algorithm-home.html">Algorithm</a>
+              </div>
+              </li>
+      		<li class="nav-item dropdown">
+      	        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">example</a>
+      	        <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../tutorial/C/C-home.html">C</a>
+                  <a class="dropdown-item" href="../tutorial/CPP/CPP-home.html">Cpp</a>
+                  <a class="dropdown-item" href="../tutorial/python/python_home.html">Python</a>
+                  <a class="dropdown-item" href="../tutorial/julia/julia-home.html">Julia</a>
+                  <a class="dropdown-item" href="../tutorial/Java/java-home.html">Java</a>
+                  <a class="dropdown-item" href="../tutorial/ruby/ruby-home.html">Ruby</a>
+                  <a class="dropdown-item" href="../tutorial/javascript/javascript-home.html">Javascript</a>
+                  <a class="dropdown-item" href="../tutorial/html/html-thome.html">Html</a>
+                  <a class="dropdown-item" href="../tutorial/css/css-home.html">css</a>
+                  <a class="dropdown-item" href="../tutorial/Algorithm/algorithm-home.html">Algorithm</a>
+
+      	        </div>
+         		</li>
+      	    <li class="nav-item dropdown">
+      	        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Test</a>
+      	        <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../tutorial/C/C-home.html">C</a>
+                  <a class="dropdown-item" href="../tutorial/CPP/CPP-home.html">Cpp</a>
+                  <a class="dropdown-item" href="../tutorial/python/python_home.html">Python</a>
+                  <a class="dropdown-item" href="../tutorial/julia/julia-home.html">Julia</a>
+                  <a class="dropdown-item" href="../tutorial/Java/java-home.html">Java</a>
+                  <a class="dropdown-item" href="../tutorial/ruby/ruby-home.html">Ruby</a>
+                  <a class="dropdown-item" href="../tutorial/javascript/javascript-home.html">Javascript</a>
+                  <a class="dropdown-item" href="../tutorial/html/html-thome.html">Html</a>
+                  <a class="dropdown-item" href="../tutorial/css/css-home.html">css</a>
+                  <a class="dropdown-item" href="../tutorial/Algorithm/algorithm-home.html">Algorithm</a>
+      	        </div>
+      	    </li>
+      	    <li class="nav-item">
+      	      	<a class="nav-link" href="../about/about.html">about us</a>
+      	    </li>
+      	    <li class="nav-item">
+      	        <a class="nav-link" href="../help/help.html">help</a>
+      	    </li>
+          </ul>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-part">
+<div class="homepage-programming-language zoom-on-hover">
+<a class="programming-language-name" href="https://www.programiz.com/python-programming">
+<div>
+<img src="">
+</div>
+<span></span>
+</a>
+</div>
+</div>
+<div class="emailbox">
+    <h2>Contect me</h2>
+    <form>
+
+            <tr>
+                <label>
+                    Email-id
+                    <input type="text" class="email" placeholder="email-id"/>
+                </label>
+            </tr>
+            <tr>
+                <label>
+                Subject
+                <input type="text" class="subject" placeholder="subject"/>
+
+                </label>
+            </tr>
+            <tr>
+                <label>
+                    Message
+                <textarea placeholder="message"></textarea>
+                </label>
+            </tr>
+                <div class="status">
+                </div>
+                <button type="submit" class="submit">Sent</button>
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer-part   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer style="background-color: #343a40!important;">
+    <!--  footer-right  -->
+          <div style="padding-left: 7%; padding-right: 7%; padding-bottom: 5%; padding-top: 5%;">
+            <div style="flex-grow: 0.4;">
+            <a href="./index/index.html"><img src=../photos/logo.png title="this is home footer part" alt="logo" style="width:150px; height:50px;"><p style="color: #fff;"><span><b><u>GetKnowledge</u></b></span></p></a>
+          </div>
+
+
+
+
+                    <!--                       footer-left                     -->
+
+
+
+
+          <div style="flex-grow: 0.4;" style="padding-left: 7%; padding-right: 7%; padding-bottom: 5%; padding-top: 5%;">
+          <div class="footer-list-container" style=" display: flex; margin-left: 60px; display: flex; flex-direction: row; margin-left: 20%;">
+          <div style=" flex-grow: 0.7;">
+            <P style="color: white;">Tutorial</P>
+              <p><a href="../tutorial/C/C-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/CPP/CPP-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/python/python_home.html" style="color: #aeb8b5;">Python</a></p>
+              <p><a href="../tutorial/julia/julia-home.html" style="color:#aeb8b5;">Julia</a></p>
+              <p><a href="../tutorial/Java/java-home.html" style="color:#aeb8b5;">Java</a></p>
+              <p><a href="../tutorial/javascript/javascript-home.html" style="color: #aeb8b5;">Javascript</a></p>
+              <p><a href="../tutorial/html/html-thome.html" style="color: #aeb8b5;">Html</a></p>
+              <p><a href="../tutorial/css/css-home.html" style="color: #aeb8b5;">css</a></p>
+          </div>
+          <div style=" flex-grow: 0.7;">
+              <p style="color: white;">Example</p>
+              <p><a href="../tutorial/C/C-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/CPP/CPP-homr.html" style="color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/python/python_home.html" style="color:#aeb8b5;">Python</a></p>
+              <p><a href="../tutorial/julia/julia-home.html" style="color: #aeb8b5;">Julia</a></p>
+              <p><a href="../tutorial/Java/java-home.html" style="color: #aeb8b5;">Java</a></p>
+              <p><a href="../tutorial/javascript/javascript-home.html" style="color: #aeb8b5;">Javascript</a></p>
+              <p><a href="../tutorial/html/html-thome.html" style="color: #aeb8b5;">Html</a></p>
+              <p><a href="../tutorial/css/css-home.html" style="color: #aeb8b5;">css</a></p>
+          </div>
+          <div style=" flex-grow: 0.7;">
+            <p style="color: white;">Test</p>
+              <p><a href="../tutorial/C/C-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/CPP/CPP-homr.html" style="color: #aeb8b5">Cpp</a></p>
+              <p><a href="../tutorial/python/python_home.html" style="color:#aeb8b5;">Python</a></p>
+              <p><a href="../tutorial/julia/julia-home.html" style="color: #aeb8b5;">Julia</a></p>
+              <p><a href="../tutorial/Java/java-home.html" style="color: #aeb8b5;">Java</a></p>
+              <p><a href="../tutorial/javascript/javascript-home.html" style="color: #aeb8b5;">Javascript</a></p>
+              <p><a href="../tutorial/html/html-thome.html" style="color: #aeb8b5;">Html</a></p>
+              <p><a href="../tutorial/css/css-home.html" style="color: #aeb8b5;">css</a></p>
+          </div>
+          </div>
+          </div>
+          </div>
+        <div>
+          <p style="text-align:center; color:#fff;">© all right reserved</p>
+        </div>
+    </footer>
+        </body>
+    </html>      <div style=" flex-grow: 0.7;">
+              <p style="color: white;">Example</p>
+              <p><a href="../tutorial/C/C-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/CPP/CPP-homr.html" style="color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/python/python_home.html" style="color:#aeb8b5;">Python</a></p>
+              <p><a href="../tutorial/julia/julia-home.html" style="color: #aeb8b5;">Julia</a></p>
+              <p><a href="../tutorial/Java/java-home.html" style="color: #aeb8b5;">Java</a></p>
+              <p><a href="../tutorial/javascript/javascript-home.html" style="color: #aeb8b5;">Javascript</a></p>
+              <p><a href="../tutorial/html/html-thome.html" style="color: #aeb8b5;">Html</a></p>
+              <p><a href="../tutorial/css/css-home.html" style="color: #aeb8b5;">css</a></p>
+          </div>
+          <div style=" flex-grow: 0.7;">
+            <p style="color: white;">Test</p>
+              <p><a href="../tutorial/C/C-homr.html" style="color: #aeb8b5">Cpp</a></p>
+              <p><a href="../tutorial/CPP/CPP-home.html" style=" color: #aeb8b5;">Cpp</a></p>
+              <p><a href="../tutorial/python/python_home.html" style="color:#aeb8b5;">Python</a></p>
+              <p><a href="../tutorial/julia/julia-home.html" style="color: #aeb8b5;">Julia</a></p>
+              <p><a href="../tutorial/Java/java-home.html" style="color: #aeb8b5;">Java</a></p>
+              <p><a href="../tutorial/javascript/javascript-home.html" style="color: #aeb8b5;">Javascript</a></p>
+              <p><a href="../tutorial/html/html-thome.html" style="color: #aeb8b5;">Html</a></p>
+              <p><a href="../tutorial/css/css-home.html" style="color: #aeb8b5;">css</a></p>
+          </div>
+          </div>
+          </div>
+          </div>
+        <div>
+          <p style="text-align:center; color:#fff;">© all right reserved</p>
+        </div>
+    </footer>
+        </body>
+    </html>

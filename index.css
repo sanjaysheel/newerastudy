@@ -1,0 +1,158 @@
+       
+/*===============================================*/
+    /*       */
+/*===============================================*/
+ 
+
+     
+
+
+
+      h1{
+
+          margin-top: 0px;
+          margin-left: 120px;
+          margin-right: 100px;
+      }
+      #colorlib-hero .flexslider .slider-text {
+    max-width: 100%;
+    display: table;
+    opacity: 0;
+    height: 600px;
+    z-index: 9;
+}
+/*
+
+      #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+    padding: 2em;
+}
+
+*/
+
+element.style {
+    background-image: url(../photos/home1.jpg);
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    opacity: 0;
+    display: block;
+    z-index: 1;
+}
+
+      h1.hello{
+          padding-top: 15%;
+      }
+      table.main-table{
+          background-image:url("../photos/home1.jpg");
+      }
+
+
+      .programming-language-name {
+    color: #333;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding-top: 115px;
+    text-align: center;
+}
+
+     .programming-language-list {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        margin-top: 20px;
+}
+@media screen and (min-width: 768px)
+.programming-language-list {
+    flex-flow: row;
+    padding-bottom: 36px;
+    max-width: 900px;
+    margin: auto;
+}
+
+      home-page-photo{
+        background-image: url(../photos/home1.png);
+          width: 100%;
+          float: left;
+          margin-right: -100%;
+          position: relative;
+          opacity: 0;
+          display: block;
+          z-index: 1;
+      }
+/*-------------  programming-language-list-first-div  -------------*/
+
+      div.all-list-programming-language{
+          background-color: #ebebf15e;
+      }
+
+
+/*-------------  space-bar  -------------*/
+
+
+      div.space-bar{
+          background-color: #ebebf15e;
+      }
+
+
+/*-------------  timer  -------------*/
+
+
+      div.timer{
+          background-color: #ebebf15e;
+      }
+
+/*-------------  footer-list  -------------*/
+
+      div.footer-list{
+          margin: -5px 0px 35px;
+      }
+      .w3-col.l6 {
+
+          width: 49.99999%;
+
+      }
+      .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+
+          float: left;
+          width: 100%;
+
+      }
+      element {
+
+          padding: 2% 3%;
+
+      }
+      .w3-center {
+
+          text-align: center !important;
+
+      }
+      16	 {
+
+          padding: 2% 3%;
+
+      }
+      .w3-card-2 {
+
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+      }
+      .w3-white, .w3-hover-white:hover {
+
+          color: #000 !important;
+          background-color: #fff !important;
+
+      }
+      .w3-padding {
+          padding: 8px 16px !important;
+              padding-bottom: 8px;
+      }
+
