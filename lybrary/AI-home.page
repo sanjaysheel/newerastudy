@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About AI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-left: 5%; padding-right: 7%; padding-top: 70px;">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<h3 style="text-align: center;color:white;">Artificial Intelligence<h3>
+</nav>
+
+
+
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Artificial Intelligence</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+<h1 style="text-align: center; color: #6fa3d0;">Overview of Artificial Intelligence</h1>
+<ul>
+<h2><b>What is AI?</b></h2>
+  <ol style="background-color: #dedfe3; font-size:16px;">
+    <p></p>
+    <li>
+      Artificial Intelligence or AI is a branch of computer Science which deals with machines and find solutions to complex problems in a human fashion.</li>
+      <li>A flexible and efficient approach can be taken depending on the requirements established, which influences how artificial the intelligent behavior appears</li>
+      <li>Artificial intelligence can be viewed in various area like</li>
+      <ol>
+        <li>As a programming perspective, AI includes the study of symbolic programming, problem solving</li>
+      </ol>
+      <li>some programming lagugaes like python , lisp , c and so on are there which are use for AI</li>
+      <li>Artificial Intelligence is a electronic machine that stores huge or large amount of information and process it at very high speed</li>
+      <li>It has ability to solve problems</li>
+      <li>It is the process to making machines intelligent. It is related to the similar task of using computers to understand human intelligence</li>
+      <p></p>
+    </ol>
+</ul>
+<ul>
+<h2>The Importance of AI in various area</h2>
+<ol style="background-color: #dedfe3;">
+<li>Speech Recognition</li>
+<p></p>
+<li>Computer Vision</li>
+<p></p>
+<li>Gaming</li>
+<p></p>
+<li>Natural Language Processing</li>
+<p></p>
+<li>Expert Systems</li>
+<p></p>
+<li>Handwriting Recorgnization</li>
+</ol>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--                History of AI                    -->
+
+
+
+
+
+
+
+
+
+
+
+  <h2 style="padding-left: 5% ">History of AI</h2>
+
+<div style="padding-left: 8%; padding-right: 15%; font-size: 25px;">
+<table border="2px">
+  <thead style="text-align: center;">
+    <tr>
+      <td>S. No.</td>    
+      <td> Year </td>
+      <td> Innovation </td>
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+      <td style="text-align: center;">1</td>    
+      <td>1943 </td>
+      <td><b>Karel Čapek</b> was a czech writer, playwright and critic. which introduced the word robot</td>
+    </tr>
+     <tr>
+      <td style="text-align: center;">2</td>    
+      <td> 1948 </td>
+      <td><b>Isaac Asimov</b>, coined the term Robotics.</td>
+    </tr>
+     <tr>
+      <td style="text-align: center;">3</td>    
+      <td> 1950 </td>
+      <td><b>Alan Turing</b> introduced Turing for evaluation of intelligence and published Computing Machinery , Intelligence.</td>
+    </tr>
+     <tr>
+      <td style="text-align: center;">4</td>    
+      <td> 1956 </td>
+      <td><b>John McCarthy</b>and the term Artificial Intelligence. Demonstration of the first
+running AI program at Carnegie Mellon University.</td>
+    </tr>
+     <tr>
+      <td style="text-align: center;">5</td>    
+      <td> 1958 </td>
+      <td><b>John McCarthy</b> invented LISP programming language for AI.</td>
+    </tr>
+     <tr>
+      <td style="text-align: center;">6</td>    
+      <td> 1965 </td>
+      <td><b>Joseph Weizenbaum</b> at MIT built ELIZA.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--             next or previois page                    -->
+
+
+
+
+
+
+
+
+
+<div class="container">
+  		<ul class="pager">
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+
+
+</body>
+</html>
