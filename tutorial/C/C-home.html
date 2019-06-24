@@ -1,19 +1,297 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style>
-      .h{
-      color:#68afff;
-      text-align:center;
-      padding-top:19%;
-      padding-bottom:17%;
-      display:fixed;
-      }
-    </style>
-  </head>
-  <body style="background-color:black;">
-<h1 class="h">Coming soon...</h1>
-  </body>
-</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(204, 204, 204);
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+}
+
+  header {
+  background-color: rgb(102, 102, 102);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+  
+}
+
+button {
+  background-color: #4CAF50;
+  } 
+  /* Green */
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header> <h3 style="color: aqua" > C LANGUAGE</h3> </header>
+
+<div class="tab">
+  <button class="button" onclick="banti(event, 'a')" id="defaultOpen">introduction</button>
+  <button class="button" onclick="banti(event, 'b')">variable</button>
+  <button class="button" onclick="banti(event, 'c')">identifire</button>
+  <button class="button" onclick="banti(event, 'd')">C Operators</button>
+  <button class="button" onclick="banti(event, 'e')">C for Loop</button>
+  <button class="button" onclick="banti(event, 'f')">C do...while Loop</button>
+  <button class="button" onclick="banti(event, 'g')">C break and continue</button>
+  <button class="button" onclick="banti(event, 'h')">C Programming Functions</button>
+  <button class="button" onclick="banti(event, 'i')">C User-defined Functions</button>
+  <button class="button" onclick="banti(event, 'j')">C switch...caseC Function Types</button>
+  <button class="button" onclick="banti(event, 'j')">C Recursion</button>
+  <button class="button" onclick="banti(event, 'j')">C Storage Class</button>
+  <button class="button" onclick="banti(event, 'j')">C Function Examples</button>
+  <button class="button" onclick="banti(event, 'j')">C Programming Arrays</button>
+  <button class="button" onclick="banti(event, 'j')">C Multi-dimensional Arrays</button>
+  <button class="button" onclick="banti(event, 'j')">C Arrays & Function</button>
+  <button class="button" onclick="banti(event, 'j')">C Programming Pointers</button>
+  <button class="button" onclick="banti(event, 'j')">C switch...case</button>
+</div>
+
+<div id="a" class="tabcontent">
+  <h3 style="text-align: center">intro</h3>
+  <p>C is a powerful general-purpose programming language. It is fast, portable and available in all platforms. <br>
+
+    If you are new to programming, C is a good choice to start your programming journey. <br>
+    
+    This is a comprehensive guide on how to get started in C programming language, <br>
+     why you should learn it and how you can learn it.</p>
+</div>
+
+<div id="b" class="tabcontent">
+  <h3 style="text-align: center">variable</h3>
+  <p>In programming, a variable is a container (storage area) to hold data. <br>
+
+    To indicate the storage area, each variable should be given a unique name (identifier). <br> Variable names are just the symbolic representation of a memory location. For example:
+    
+    int playerScore = 95; <br>
+    Here, playerScore is a variable of integer type. Here, the variable is assigned an integer value 95. <br>
+    
+    The value of a variable can be changed, hence the name variable. <br>
+    
+    char ch = 'a'; <br>
+    // some code <br>
+    ch = 'l';</p> 
+</div>
+
+<div id="c" class="tabcontent">
+  <h3 style="text-align: center">identifire</h3>
+  <p>Identifier refers to name given to entities such as variables, functions, structures etc. <br>
+
+    Identifier must be unique. They are created to give unique name to a entity to identify it during the execution of the program. <br> For example: <br>
+    
+    int money; <br>
+    double accountBalance; <br>
+    Here, money and accountBalance are identifiers. <br>
+    
+    Also remember, identifier names must be different from keywords. <br> You cannot use int as an identifier because int is a keyword.</p>
+<pre>  
+    Rules for naming identifiers
+    A valid identifier can have letters (both uppercase and lowercase letters), digits and underscores.
+    The first letter of an identifier should be either a letter or an underscore.
+    There is no rule on how long an identifier can be. However, you may run into problems in 
+     some compilers if identifier is longer than 31 characters.
+    Good Programming Practice
+    You can choose any name as an identifier following the rules (excluding keywords).
+     However, give meaningful name to an identifier (variables, function names etc). 
+     It will make your and your fellow programmers life much easier.
+  </pre>
+
+  </div>
+
+<div id="d" class="tabcontent">
+  <h3 style="text-align: center"> OPERATOR</h3>
+  <Pre>
+      Types of Operators in C
+      Arithmetic Operators.
+      Relational Operators.
+      Logical Operators.
+      Assignment Operators.
+      Increment and Decrement Operators.
+      Conditional Operator.
+      Bitwise Operators.
+      Special Operators.
+      
+  </Pre>
+
+</div>
+
+<div id="e" class="tabcontent">
+    <h3 style="text-align: center"> for loop</h3>
+    <Pre>
+  Loops are used in programming to repeat a block of code until a specific condition is met.  <br> There are three loops in C programming:
+
+    
+      
+        for Loop
+         The syntax of for loop is:
+        
+        for (initializationStatement; testExpression; updateStatement)
+        {
+               // codes 
+        }
+    </Pre>
+  
+  </div>
+
+  <div id="f" class="tabcontent">
+      <h3 style="text-align: center"> do while</h3>
+      <Pre>
+          The syntax of a while loop is:
+
+          while (testExpression) 
+          {
+              //codes 
+          }
+          How while loop works?
+          The while loop evaluates the test expression.
+          
+          If the test expression is true (nonzero), codes inside the body of while loop is executed. <br> The test expression is evaluated again. The process goes on until the test expression is false.
+          
+          When the test expression is false, the while loop is terminated.
+      </Pre>
+    
+    </div>
+
+    <div id="g" class="tabcontent">
+        <h3 style="text-align: center"> break and continue</h3>
+        <Pre>
+      break Statement
+      The break statement terminates the loop (for, while and do...while loop) <br> immediately when it is encountered. Its syntax is:
+            
+            break;
+            The break statement is almost always used with if...else statement inside the loop.
+
+            continue Statement
+                The continue statement skips statements after it inside the loop. Its syntax is:
+
+                continue;
+               The continue statement is almost always used with if...else statement.
+
+
+        </Pre>
+      
+      </div>
+
+      <div id="h" class="tabcontent">
+          <h3 style="text-align: center"> function</h3>
+          <Pre> A function is a block of code that performs a specific task.
+
+              Suppose, a program related to graphics needs to create a circle and color it depending upon the radius and color <br> from the user. You can create two functions to solve this problem:
+              
+              create a circle function
+              color function
+              Dividing complex problem into small components makes program easy to understand and use.
+              
+              Types of function
+              Depending on whether a function is defined by the user or already included in C compilers, there are two types of <br> functions in C programming
+              
+              There are two types of function in C programming:
+              
+              Standard library functions
+              User defined functions
+              Standard library functions
+              The standard library functions are built-in functions in C programming to handle tasks such as mathematical <br> computations, I/O processing, string handling etc.
+              
+              These functions are defined in the header file. When you include the header file, these functions are available <br> for use. For example:
+              
+              The printf() is a standard library function to send formatted output to the screen (display output on the screen). <br> This function is defined in "stdio.h" header file.
+              
+              There are other numerous library functions defined under "stdio.h", such as scanf(), fprintf(), getchar() etc. <br> Once you include "stdio.h" in your program, all these functions are available for use.
+              
+              Learn more about standard library functions in C programming
+              
+              User-defined function
+              As mentioned earlier, C allow programmers to define functions. Such functions created by the user are called <br> user-defined functions.
+              
+              You can create as many user-defined functions as you want.
+             
+              
+              
+          </Pre>
+        
+        </div>
+
+        <div id="i" class="tabcontent">
+            <h3 style="text-align: center"></h3>
+            <P>
+              comming soon
+            </P>
+          
+          </div>
+          <div id="j" class="tabcontent">
+              <h3 style="text-align: center"></h3>
+              <P>
+                comming soon
+              </P>
+            
+            </div>
+
+
+<script>
+function banti(evt, banti) {
+  var i, tabcontent, button;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  button = document.getElementsByClassName("button");
+  for (i = 0; i < button.length; i++) {
+    button[i].className = button[i].className.replace(" active", "");
+  }
+  document.getElementById(banti).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
