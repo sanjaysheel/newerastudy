@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Encapsulation in java</h1>
+</div><br>
+<p style="font-size:20px;">Encapsulation in java is a procrss of wrapping code and data together into a single unit. </p>
+<p style="font-size:20px;">Encapsulation in java, We can create a fully encapsulated class in java by making all the data member of the class private.Now we can use setter and getter method to set and get the data in it.</p>
+<p style="font-size:20px;">The java Bean class is the example of fully encapsulated class.</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Advantage of Encapsulation</h1>
+</div><br>
+<p style="font-size:20px;">By providing only setter or getter method, you can make the class read-only or write-only. It provides you the control over the data.</p>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3>#Example of Encapsulation</h3>
+</div><br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+class EncapsulationExample
+{
+    private int ssn;
+    private String empName;
+    private int empAge;
+
+    //Getter and Setter methods
+    public int getEmpSSN()
+	{
+        return ssn;
+    }
+
+    public String getEmpName()
+	{
+        return empName;
+    }
+
+    public int getEmpAge()
+	{
+        return empAge;
+    }
+
+    public void setEmpAge(int newValue)
+	{
+        empAge = newValue;
+    }
+
+    public void setEmpName(String newValue)
+	{
+        empName = newValue;
+    }
+
+    public void setEmpSSN(int newValue)
+	{
+        ssn = newValue;
+    }
+}
+public class EncapsDemo
+{
+    public static void main(String args[])
+	{
+         EncapsulationExample obj = new EncapsulationExample();
+         obj.setEmpName("Varun");
+         obj.setEmpAge(32);
+         obj.setEmpSSN(112233);
+         System.out.println("Employee Name: " + obj.getEmpName());
+         System.out.println("Employee SSN: " + obj.getEmpSSN());
+         System.out.println("Employee Age: " + obj.getEmpAge());
+    } 
+}
+
+//output
+	Employee Name: Varun
+	Employee SSN: 112233
+	Employee Age: 32
+
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

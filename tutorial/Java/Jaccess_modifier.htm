@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Access Modifiers in java</h1>
+</div><br>
+<p style="font-size:20px;">There are two type of modifiers in java that is-</p>
+<br>
+<ul>
+<li style="font-size:20px;">access modifiers</li>
+<li style="font-size:20px;">non-access modifiers</li>
+<br>
+<p style="font-size:20px;">There are 4 types of access modifiers.</p>
+<ul>
+<li style="font-size:20px;">private</li>
+<li style="font-size:20px;">default</li>
+<li style="font-size:20px;">protected</li>
+<li style="font-size:20px;">public</li>
+</ul>
+<br>
+<p style="font-size:20px;">There are various types of non-access modifiers.</p>
+<ul>
+<li style="font-size:20px;">static</li>
+<li style="font-size:20px;">abstract</li>
+<li style="font-size:20px;">synchronized</li>
+<li style="font-size:20px;">native</li>
+<li style="font-size:20px;">volatile</li>
+<li style="font-size:20px;">transient and etc.</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h2 >private access modifiers</h2>
+</div><br>
+<p style="font-size:20px;">The private access modifier is accessible only within class.</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h2 style="color:black">#Example of private access modifers</h2></div>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+class A
+{  
+private int x=10;  
+private void get()
+{
+System.out.println("Hello java");
+}  
+}  
+public class Demo
+{  
+ public static void main(String args[])
+ {  
+   A ob=new A();  
+   System.out.println(ob.x);//Compile Time Error  
+   obj.get();//Compile Time Error  
+   }  
+}   
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h2 >default access modifers</h2></div>
+<br>
+<p style="font-size:20px">The default access modifers are accessible only in the same package</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h2>#Example of default access Modifiers</h2></div>
+<br>
+<h3>Addition.java<h3>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package xyzpackage;
+
+public class Addition 
+{
+     int addTwoNumbers(int a, int b)
+	 {
+	return a+b;
+   }
+} 
+</pre>
+</div>
+<br>
+<h3>AddExample.java</h3>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package abcpackage;
+
+import xyzpackage.*;
+public class AddExample
+{
+   public static void main(String args[])
+   {
+	Addition obj = new Addition();
+     obj.addTwoNumbers(112, 212);
+   }
+}
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h2>protected access modifers</h2>
+</div><br>
+<p style="font-size:20px">Protected data member and method are only accessible by the classes of the same package and the subclasses present in any package.You can also say that the protected access modifier is similar to default access modifier with one exception that it has visibility in sub classes.</p>
+<p style="font-size:20px">Classes cannot be declared protected. This access modifier is generally used in a parent child relationship.</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of protected access modifers</h3></div>
+<br>
+<h3>Multiply.java</h3>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package abcpackage;
+public class Multiply
+ {
+   protected int mulTwoNumbers(int a, int b)
+   {
+	return a*b;
+   }
+}
+</pre>
+</div>
+<br>
+<h3>Demo.java</h3>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package xyzpackage;
+import abcpackage.*;
+class Demo extends Multiply
+{
+   public static void main(String args[])
+   {
+	Test ob = new Test();
+	System.out.println(ob.mulTwoNumbers(10, 22));
+   }
+}
+
+//output
+	33
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h1 style="color:black">public access modifers</h1></div>
+<br>
+<p style="font-size:20px">The members, methods and classes that are declared public can be accessed from anywhere. This modifier doesn’t put any restriction on the access.</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3>#Example of public access modifers</h3></div>
+<br>
+<h3>Addition.java</h3>
+<br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package abcpackage;
+
+public class Addition 
+{
+
+   public int addTwoNumbers(int a, int b)
+   {
+	return a+b;
+   }
+}  
+</pre>
+</div>
+<br>
+<h3>Demo.java</h3><br>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+package xyzpackage;
+import abcpackage.*;
+class Demo
+{
+   public static void main(String args[])
+   {
+      Addition ob = new Addition();
+      System.out.println(ob.addTwoNumbers(10, 123));
+   }
+}  
+
+//output
+	133
+</pre>
+</div>
+<br>
+<table class="alt">
+<tr><th>Access Modifier</th> <th>within class</th> <th>within package</th><th>outside package by subclass only</th><th>outside package</th></tr>
+<tr><td><b>Private</b></td><td>Y</td><td>N</td><td>N</td><td>N</td></tr>
+<tr><td><b>Default</b></td><td>Y</td><td>Y</td><td>N</td><td>N</td></tr>
+<tr><td><b>Protected</b></td><td>Y</td><td>Y</td><td>Y</td><td>N</td></tr>
+<tr><td><b>Public</b></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+</table>
+<!--
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3>The scope of access modifiers in tabular form</h3>
+</div><br>
+
+<table style="border:2px solid pink;">
+<tr>
+<td><br></td>
+<td>Class<br></td>
+<td>Package<br></td>
+<td>Subclass<br>(same package)</td>
+<td>Subclass<br>(diff package)</td>
+<td>Outside Class</td>
+</tr>
+<br>
+<br>
+<br>
+<tr>
+<td>public</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>default </td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>private</td>
+<td>yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<br>
+</table>
+-->
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

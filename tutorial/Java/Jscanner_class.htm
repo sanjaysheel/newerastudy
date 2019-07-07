@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Scanner Class in Java</h1>
+</div><br>
+<p style="font-size:20px;">It is used to create an object which is used to read data from input stream (keyboard).</p>
+<p style="font-size:20px;">Scanner class is defined in java.util package. So, we need to import this packet first before using the methods of Scanner class.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example of Scanner Class</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+import java.util.Scanner;  // Import the Scanner class
+
+class ScannerClass
+{
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
+
+    String userName = sc.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input 
+  }
+}
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Another Example of Scanner Class</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+import java.util.*;
+class Test
+{
+ public static void main(String args[])
+ {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter the name and age");
+ String name = sc.next();
+ int age = sc.nextInt();
+ System.out.println("Name:"+name);
+ System.out.println("Age:"+age);
+ }
+ }
+ </pre>
+ </div>
+ <br>
+ <div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

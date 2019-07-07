@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Overloading</h1>
+</div><br>
+<p style="font-size:20px;">If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.</p>
+<p style="font-size:20px;">Overloading allows different methods to have the same name, but different signatures where the signature can differ by the number of input parameters or type of input parameters or both. Overloading is related to compile time (or static) polymorphism.</p>
+<ul>
+<li style="font-size:20px;">Method Overloading means to define different method with the same name but different parameters list and different definition.</li>
+<li style="font-size:20px;">It is used when object are required to perform similar task but using different input parameter that may vary either in number or type of arguments.</li>
+<li style="font-size:20px;">Overloading method may have different return type. It is a way to achiving polymorphism in java</li>
+</ul>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Overloading</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class Test { 
+   
+    public int Add(int x, int y) 
+    { 
+        return (x + y); 
+    } 
+   
+    public int Add(int x, int y, int z) 
+    { 
+        return (x + y + z); 
+    } 
+   
+    public double Add(double x, double y) 
+    { 
+        return (x + y); 
+    } 
+  
+      public static void main(String args[]) 
+    { 
+        Test obj = new Test(); 
+        System.out.println(obj.Add(10, 20)); 
+        System.out.println(obj.Add(10, 20, 30)); 
+        System.out.println(obj.Add(10.5, 20.5)); 
+    } 
+} 
+
+//output
+	30
+	60
+	31.0
+
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

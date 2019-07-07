@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java While Loop</h1></div>
+<p style="font-size:20px;">The while loop loops through a block of code as long as a specified condition is true:</p>
+<h2 style="color:black">#Syntax</h2>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+While(condition)
+{
+//Statement
+}
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example in While Loop</h3></div>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class WhileExample
+{
+public static void main(String args[])
+{
+int i;
+i=1;
+while(i<=5)
+{
+System.out.println("*");
+i++;
+}
+}
+	//output is *****
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Do While Loop</h1></div>
+<p style="font-size:20px;">do-while loop is similar to while loop, however there is a difference between them: In while loop, condition is evaluated before the execution of loop’s body but in do-while loop condition is evaluated after the execution of loop’s body.</p>
+<h2 style="color:black">#Syntax</h2>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+do
+{
+//Statement
+}
+while(condition);
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example in Do While Loop</h3></div>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class DoWhileExample
+{
+public static void main(String args[])
+{
+int i;
+i=10;
+do
+{
+System.out.println(i);
+i--;
+}
+while(i>=1)
+}
+}
+	//output is 10 9 8 7 6 5 4 3 2 1
+</pre>
+</div>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

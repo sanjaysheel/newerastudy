@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Super Keyword</h1>
+</div><br>
+<p style="font-size:20px;">The super keyword in Java is a reference variable which is used to refer immediate parent class object.</p>
+<p style="font-size:20px;">Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.</p>
+<br>
+<div style="border:1px solid pink;padding:1px;font-size:20px;background-color:gray;">
+<h3 style="color:black">Usage of Java super Keyword</h3>
+</div><br>
+<ol>
+<li style="font-size:20px;">super can be used to refer immediate parent class instance variable.
+</li>
+<li style="font-size:20px;">super can be used to invoke immediate parent class method.</li>
+<li style="font-size:20px;">super() can be used to invoke immediate parent class constructor.</li>
+</ol>
+<br>
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">1) super is used to refer immediate parent class instance variable.</h3></div>
+<br>
+<p style="font-size:20px">We can use super keyword to access the data member or field of parent class. It is used if parent class and child class have same fields.</p>
+<br>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Animal
+{  
+String color="white";  
+}  
+class Dog extends Animal
+{  
+String color="black";  
+void printColor()
+{  
+System.out.println(color); 
+System.out.println(super.color);  
+}  
+}  
+class TestSuper1
+{  
+public static void main(String args[])
+{  
+Dog d=new Dog();  
+d.printColor();  
+}
+}
+//output
+	black
+	white
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">2) super can be used to invoke parent class method</h3></div>
+<br>
+<p style="font-size:20px">The super keyword can also be used to invoke parent class method. It should be used if subclass contains the same method as parent class. In other words, it is used if method is overridden.</p>
+<br>
+
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Animal
+{  
+void eat()
+{
+System.out.println("eating...");
+}  
+}  
+class Dog extends Animal
+{  
+void eat()
+{
+System.out.println("eating bread...");
+}  
+void bark()
+{
+System.out.println("barking...");
+}  
+void work()
+{  
+super.eat();  
+bark();  
+}  
+}  
+class TestSuper2
+{  
+public static void main(String args[])
+{  
+Dog d=new Dog();  
+d.work();  
+}
+}
+
+//output 
+	eating...
+	barking...
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">3) super is used to invoke parent class constructor.</h3></div>
+<br>
+<p style="font-size:20px">The super keyword can also be used to invoke the parent class constructor. Let's see a simple example:</p>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Animal
+{  
+Animal()
+{
+System.out.println("animal is created");
+}  
+}  
+class Dog extends Animal
+{  
+Dog()
+{  
+super();  
+System.out.println("dog is created");  
+}  
+}  
+class TestSuper3
+{  
+public static void main(String args[])
+{  
+Dog d=new Dog();  
+}
+}
+
+//output
+	animal is created
+	dog is created
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Super Keyword</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Person
+{  
+int id;  
+String name;  
+Person(int id,String name)
+{  
+this.id=id;  
+this.name=name;  
+}  
+}  
+class Emp extends Person
+{  
+float salary;  
+Emp(int id,String name,float salary)
+{  
+super(id,name);  
+this.salary=salary;  
+}  
+void display()
+{
+System.out.println(id+" "+name+" "+salary);
+}  
+}  
+class TestSuper5
+{  
+public static void main(String[] args)
+{  
+Emp e1=new Emp(1,"ankit",45000f);  
+e1.display();  
+}
+}
+
+//output
+	1 ankit 45000
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

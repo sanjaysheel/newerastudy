@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Aggregation</h1>
+</div>
+<br>
+<p style="font-size:20px;">It is a special form of Association where:</p>
+<ul>
+<li style="font-size:20px;">It represents Has-A relationship.</li>
+<li style="font-size:20px;">It is a unidirectional association i.e. a one way relationship. For example, department can have students but vice versa is not possible and thus unidirectional in nature.</li>
+<li style="font-size:20px;">In Aggregation, both the entries can survive individually which means ending one entity will not effect the other entity</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Aggregation</h3>
+</div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Author
+{
+ String authorName;
+ int age;
+ String place;
+ Author(String name,int age,String place)
+ {
+  this.authorName=name;
+  this.age=age;
+  this.place=place;
+ }
+ public String getAuthorName()
+ {
+  return authorName;
+ }
+ public int getAge()
+ {
+  return age;
+ }
+ public String getPlace()
+ {
+  return place;
+ }
+}
+
+class Book
+{
+ String name;
+ int price;
+ Author auth;
+ Book(String n,int p,Author at)
+ {
+  this.name=n;
+  this.price=p;
+  this.auth=at;
+ }
+ public void showDetail()
+ {
+  System.out.println("Book is"+name);
+  System.out.println("price "+price);
+  System.out.println("Author is "+auth.getAuthorName());
+ }
+}
+
+class Test
+{
+ public static void main(String args[])
+ {
+  Author ath=new Author("Me",22,"India");
+  Book b=new Book("Java",550,ath);
+  b.showDetail();
+ }
+}
+
+//output
+	Book is Java.
+	price is 550.
+	Author is me.
+
+
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>
+

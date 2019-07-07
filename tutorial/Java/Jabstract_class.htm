@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Abstraction in java</h1>
+</div><br>
+<p style="font-size:20px;"><b>Abstraction</b>is a process of hiding the unwanted data and show only required data is known as Abstraction.</p>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Abstract Class in java</h1>
+</div><br>
+<p style="font-size:20px;">A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.</p>
+<ul>
+<li style="font-size:20px;">An abstract class must be declared with an abstract keyword.</li>
+<li style="font-size:20px;">It can have abstract and non-abstract methods.</li>
+<li style="font-size:20px;">It cannot be instantiated.</li>
+<li style="font-size:20px;">It can have constructors and static methods also.</li>
+<li style="font-size:20px;">It can have final methods which will force the subclass not to change the body of the method.</li>
+</ul>
+<br>
+<h1 style="color:black">#Syntax of Abstract Class</h1>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+abstract class A{}  
+</pre>
+</div>
+<br>
+<h1 style="color:black">#Syntax of Abstract Method</h1>
+<div style="padding-left:3%; padding-right:640px;">
+<pre>
+abstract void printStatus();//no method body and abstract
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Abstract Class</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+abstract class A
+{
+	abstract void ma();
+	
+}
+class B extends Abstract
+{
+	void ma()
+	{
+	System.out.println("Hello java");
+	}
+class Demo
+{
+public static void main(String args[])
+{
+B ob=new B();
+ob.ma();
+}
+}
+
+//output
+	Hello
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

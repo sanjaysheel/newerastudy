@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Array</h1></div>
+<br>
+<p style="font-size:20px;">Java array is an object which contains elements of a similar data type</p>
+<p style="font-size:20px;">Arrays are used to store multiple values in a single variable.</p>
+<p style="font-size:20px;">To declare an array, define the variable type with square brackets:</p>
+<h2 style="color:black">#Syntax</h2>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+String[] cars;
+</pre>
+</div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+String[] colors = {"Red", "Blue", "yello", "cyan"};
+</pre>
+</div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+int[] Num = {10, 20, 30, 40};
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">Array Length</h3></div>
+<br>
+<p style="font-size:20px;">To find out how many elements an array has, use the length property:  </p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class ArrayExample
+{
+public static void main(String args[])
+{
+String[] colors = {"Red", "Blue", "yello", "cyan"};
+System.out.println(colors.length);
+}
+}
+// Outputs 4
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">Multidimensional Arrays</h3></div>
+<br>
+<ul>
+<li style="font-size:20px;">A multidimensional array is an array containing one or more arrays.</li>
+<li style="font-size:20px;">To create a two-dimensional array, add each array within its own set of curly braces:</li>
+</ul>
+<br>
+<h3 style="color:black">#Syntax</h3>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example</h3></div><br>
+<div style="padding-left: 3%; padding-right:640px;">
+
+<pre>
+public class MultiDemo 
+{
+  public static void main(String[] args) 
+  {
+    int[][] Numbers = { {1, 2, 3, 4}, {5, 6, 7} };
+    int x = Numbers[1][2];
+    System.out.println(x);  
+  }
+}
+	//output is 7
+</pre>
+</div>
+<br>
+
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

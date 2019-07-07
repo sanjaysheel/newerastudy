@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Static Keyword</h1></div>
+<br>
+<p style="font-size:20px;">Static keyword can be used with class, variable, method and block. Static members belong to the class instead of a specific instance, this means if you make a member static, you can access it without object.</p>
+<ul>
+<li style="font-size:20px;">The static keyword in Java is used for memory management mainly.</li>
+<li style="font-size:20px;"> We can apply java static keyword with variables, methods, blocks and nested class.</li>
+<li style="font-size:20px;">The static keyword belongs to the class than an instance of the class.</li>
+</ul>
+<p style="font-size:25px;">The Static is -</p>
+<ol>
+<li style="font-size:20px;">Variable</li>
+<li style="font-size:20px;">Method</li>
+<li style="font-size:20px;">Block</li>
+<li style="font-size:20px;">Class</li>
+</ol>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<p style="font-size:25px;"><b>Static Variable</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">If you declare any variable as static, it is known static variable.</li>
+<li style="font-size:20px;">The static variable can be used to refer the common property of all object (that is not unique for each object)</li>
+<li style="font-size:20px;">The static variable gets memory only once in class area at the time of class loading.</li>
+<li style="font-size:20px;">Advantage of static variable is,it makes your program memory efficint.</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Static Variable</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Student
+{
+	int rollno;
+	String name;
+	static String college="IIT";
+	
+	Student(int x,String y)
+	{
+	rollno=x;
+	name=y;
+	}
+	void show()
+	{
+	System.out.println(rollno+""+name+""+college);
+	}
+	public static void main(String args[])
+	{
+	Student ob1=new Student(101,"Karan");
+	Student ob2=new Student(102,"Aryan");
+	ob1.display();
+	ob2.display();
+	}
+	}
+//output
+  101 Karan IIT
+  102 Ayan IIT
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<p style="font-size:25px;"><b>Static Method</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">If you apply static keyword with any method, it is known as static method.</li>
+<li style="font-size:20px;">A static method belongs to the class rather than object of a class.</li>
+<li style="font-size:20px;">A static method can be invoked without the need for creating an instance of a class.</li>
+<li style="font-size:20px;">static method can access static data member and can change the value of it.</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Static method</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Student
+{  
+     int rollno;  
+     String name;  
+     static String college = "IIT";  
+       
+     static void change()
+	 {  
+     college = "MIT";  
+     }  
+       
+     Student(int x, String y)
+	 {  
+     rollno = x;  
+     name = y;  
+     }  
+      
+     void display()
+	 {
+	 System.out.println(rollno+" "+name+" "+college);
+	 }  
+}  
+  
+public class TestStaticMethod{  
+    public static void main(String args[])
+	{  
+		Student.change(); 
+
+	Student s1 = new Student(101,"Karan");  
+    Student s2 = new Student(202,"Aryan");  
+    Student s3 = new Student(303,"Sonu");  
+     
+    s1.display();  
+    s2.display();  
+    s3.display();  
+    }  
+}  
+
+//Output:101 Karan MIT
+         202 Aryan MIT
+         303 Sonu  MIT
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<p style="font-size:25px;"><b>Static Block</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">Is used to initialize the static data member.</li>
+<li style="font-size:20px;">It is executed before the main method at the time of classloading.</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Static Block</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class BlockExample
+{  
+  static
+  {
+  System.out.println("static block is invoked");
+  }  
+  public static void main(String args[])
+  {  
+   System.out.println("Hello Block");  
+  }  
+}  
+
+//output
+	Hello Block
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<p style="font-size:25px;"><b>Static Class</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">Nested static class doesn’t need reference of Outer class</li>
+<li style="font-size:20px;">A static class cannot access non-static members of the Outer class</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Static Class</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class JavaExample
+{
+   private static String str = "Get Knownlodge";
+
+   static class MyNestedClass
+   {
+		public void disp()
+		{
+	   System.out.println(str); 
+	}
+
+   }
+   public static void main(String args[])
+   {
+ 	JavaExample.MyNestedClass obj = new JavaExample.MyNestedClass();
+	obj.disp();
+   }
+}
+//output 
+	Get Knownlodge
+</pre>
+</div>
+<br>
+<br>
+
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

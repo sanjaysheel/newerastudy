@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Switch</h1></div>
+<p style="font-size:20px;">The switch statement to select one of many code blocks to be executed.</p>
+<h2 style="color:black">#Syntax</h2>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+Switch(Expression)
+{
+case:1
+	//code block
+break;
+case:2
+	//code block
+break;
+	.
+	.
+	.
+case:n
+	//code block
+break;
+default:
+	//code block
+}
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example in Switch</h3></div>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class SwitchDemo
+{
+public static void main(String args[])
+{
+int Month=4;
+Switch(Month)
+{
+case:1
+	System.out.println("January");
+	break;	
+
+case:2
+	System.out.println("February");
+	break;	
+
+case:3
+	System.out.println("March");
+	break;	
+case:4
+	System.out.println("April");
+	break;	
+case:5
+	System.out.println("May");
+	break;	
+case:6
+	System.out.println("June");
+	break;	
+case:7
+	System.out.println("July");
+	break;	
+case:8
+	System.out.println("August");
+	break;	
+case:9
+	System.out.println("September");
+	break;	
+case:10
+	System.out.println("October");
+	break;	
+case:11
+	System.out.println("November");
+	break;	
+case:12
+	System.out.println("December");
+	break;	
+}
+}
+	//output is April
+</pre>
+</div>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

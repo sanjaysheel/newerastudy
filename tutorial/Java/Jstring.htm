@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java String</h1>
+</div><br>
+<p style="font-size:20px;">String is a sequence of characters, for e.g. “Hello” is a string of 5 characters. In java, string is an immutable object which means it is constant and can cannot be changed once it has been created. </p>
+<p style="font-size:20px;">The String in a various methods and classes.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Creating a String</h3></div>
+<br>
+<p style="font-size:20px;">There are two types of String creating in java.</p>
+<ol style="font-size:20px;">
+<li>String literal</li>
+<li>Using new keyword</li>
+</ol>
+<br>
+<h3><b>String literal</b><h3>
+<br>
+<p style="font-size:20px;">Java String literal is created by using double quotes.</p>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+String s1 = "Hello";
+String s2 = "Hello";
+</pre>
+</div>
+<br>
+<h3><b>Using new keyword</b><h3>
+<br>
+<p style="font-size:20px;">: Java String is created by using a keyword “new”.</p>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+String s1 = new String("java");
+String s2 = new String("java");
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example in Java String</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class StringExample
+{  
+   public static void main(String args[])
+   {  
+	//creating a string by java string literal 
+	String s1 = "GetKnownladge";  
+			
+	//creating another java string s2 by using new keyword 
+	String s2 = new String("Java String Example"); 
+		
+	System.out.println(s1);  
+	System.out.println(s2);    
+   }
+}
+
+//output
+	GetKnownladge
+	Java String Example
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Java String Methods</h3></div>
+<br>
+<p style="font-size:20px;">There are various methods available in java String Class.</p>
+<br>
+<h3><b>char charAt(int index)</b></h3>
+<p style="font-size:20px;">In this method are returns char value for the particular index</p>
+<br>
+<h3><b>	int length()</b></h3>
+<p style="font-size:20px;">In this method are returns string length</p>
+<br>
+<h3><b>boolean isEmpty()</b></h3>
+<p style="font-size:20px;">In this method are use in checks if string is empty.</p>
+<br>
+<h3><b>String concat(String str)</b></h3>
+<p style="font-size:20px;">In this method are use in concatenates the specified string.</p>
+<br>
+<h3><b>String replace(char old, char new)</b></h3>
+<p style="font-size:20px;">In this method are use in replaces all occurrences of the specified char value.</p>
+<br>
+<h3><b>int indexOf(int ch)</b></h3>
+<p style="font-size:20px;">In this method are use in returns the specified char value index.</p>
+<br>
+<h3><b>	String toLowerCase()</b></h3>
+<p style="font-size:20px;">In this method are use in returns a string in lowercase.</p>
+<br>
+<h3><b>String toUpperCase()</b></h3>
+<p style="font-size:20px;">In this method are use in returns a string in uppercase.
+</p>
+<br>
+<h3><b>String intern()</b></h3>
+<p style="font-size:20px;">In this method are use in returns an interned string.</p>
+<br>
+<h3><b>boolean equals(Object another)</b></h3>
+<p style="font-size:20px;">In this method are use in checks the equality of string with the given object.</p>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

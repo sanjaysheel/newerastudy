@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Interface in Java</h1>
+</div><br>
+<p style="font-size:20px;">An interface in java is a blueprint of a class. It has static constants and abstract methods.</p>
+<p style="font-size:20px;">The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.</p>
+<p style="font-size:20px;">In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.</p>
+<ul>
+<li style="font-size:20px;">Java Interface also represents the IS-A relationship.</li>
+<li style="font-size:20px;">It cannot be instantiated just like the abstract class.</li>
+</ul>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h1 style="color:black">Why use Java interface?</h1></div>
+<br>
+<p style="font-size:20px;">There are mainly three reasons to use interface. They are given below.</p>
+<ul>
+<li style="font-size:20px">It is used to achieve abstraction.</li>
+<li style="font-size:20px">By interface, we can support the functionality of multiple inheritance.</li>
+<li style="font-size:20px">It can be used to achieve loose coupling.</li>
+</ul>
+<br>
+<h1 style="color:black">#Syntax of interface</h1>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+interface <interface_name>{  
+      
+    // declare constant fields  
+    // declare methods that abstract   
+    // by default.  
+}  
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">#Example of Inheritance</h1>
+</div><br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+interface printable
+{  
+void print();  
+}  
+class A implements printable
+{  
+public void print()
+{
+System.out.println("Hello");
+}  
+public static void main(String args[])
+{  
+A obj = new A();  
+obj.print();  
+}  
+}  
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

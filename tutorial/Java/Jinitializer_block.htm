@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Instance Initializer Block in java</h1>
+</div><br>
+<p style="font-size:20px;">Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created.</p>
+<p style="font-size:20px;">The initialization of the instance variable can be done directly but there can be performed extra operations while initializing the instance variable in the instance initializer block.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example Instance Initializer Block</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Bus
+{  
+    int speed;  
+      
+    Bus()
+	 {
+	 System.out.println("speed is "+speed);
+	 }  
+   
+	{
+	speed=90;//instance initialize block
+	}  
+       
+    public static void main(String args[])
+	{  
+    Bus b1=new Bus();  
+    Bus b2=new Bus();  
+    }      
+}  
+//output
+	Speed is 90
+	Speed is 90
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

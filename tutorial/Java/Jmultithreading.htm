@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Multithreading in Java</h1>
+</div><br>
+<p style="font-size:20px;">Multithreading in java is a process of executing multiple threads simultaneously. A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >What is Single Thread?</h3></div>
+<br>
+<p style="font-size:20px;">A single thread is basically a lightweight and the smallest unit of processing. Java uses threads by using a "Thread Class".</p>
+<p style="font-size:20px;">There are two types of thread – user thread and daemon thread (daemon threads are used when we want to clean the application and are used in the background).</p>
+<br>
+
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example of Single Thread</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+
+package threadtest;
+
+public class SingleThread
+{
+       public static void main(String[] args) {
+              System.out.println("This is a Single Thread");
+       }
+}
+</pre>
+</div>
+<br>
+<h3><b>Advantages of single thread:</b></h3>
+<br>
+<ul style="font-size:20px;">
+<li>Reduces overhead in the application as single thread execute in the system</li>
+<li>it reduces the maintenance cost of the application.</li>
+</ul>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >What is Multithreading?</h3></div>
+<br>
+<p style="font-size:20px;">Multithreading in java is a process of executing two or more threads simultaneously to maximum utilization of CPU.</p>
+<p style="font-size:20px;">Multithreaded applications are where two or more threads run concurrently; hence it is also known as Concurrency in Java. This multitasking is done, when multiple processes share common resources like CPU, memory, etc.</p>
+<p style="font-size:20px;">Each thread runs parallel to each other.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example of Multithreading</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+package multithreadtest;
+
+public class Demo implements Runnable
+{
+       public static void main(String[] args) 
+	   {
+        Thread Test1 = new Thread("java1");
+        Thread Test2 = new Thread("java2");
+        Test1.start();
+        Test2.start();
+        System.out.println("Thread names are following:");
+        System.out.println(Test1.getName());
+        System.out.println(Test2.getName());
+    }
+    @Override
+    public void run() {
+    }
+}
+</pre>
+</div>
+<br>
+
+<h3><b>Advantages of Multithreading:</b></h3>
+<br>
+<ul style="font-size:20px;">
+<li>The users are not blocked because threads are independent, and we can perform multiple operations at times</li>
+</ul>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Thread Life Cycle in Java</h3></div>
+<br>
+<p style="font-size:20px;">There are various stages of life cycle of thread</p>
+<ol style="font-size:20px;">
+<li>New</li>
+<li>Runnable</li>
+<li>Running</li>
+<li>Waiting</li>
+<li>Dead</li>
+</ol>
+<br>
+<ol style="font-size:20px;">
+<li><b>New:-</b>In this phase, the thread is created using class "Thread class".It remains in this state till the program starts the thread. It is also known as born thread.</li>
+<br>
+<li><b>Runnable:-</b>In this page, the instance of the thread is invoked with a start method. The thread control is given to scheduler to finish the execution. It depends on the scheduler, whether to run the thread.</li>
+<br>
+<li><b>Running:-</b>When the thread starts executing, then the state is changed to "running" state.</li>
+<br>
+<li><b>Waiting:-</b>This is the state when a thread has to wait. As there multiple threads are running in the application, there is a need for synchronization between threads.</li>
+<br>
+<li><b>Dead:-</b>This is the state when the thread is terminated. The thread is in running state and as soon as it completed processing it is in "dead state".</li>
+<br>
+</ol>
+
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

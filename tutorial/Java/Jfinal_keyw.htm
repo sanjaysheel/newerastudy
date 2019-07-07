@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Final Keyword</h1>
+</div><br>
+<p style="font-size:20px;">In java final is a keyword or reserved word and can be applied to variables, methods, classes etc. The reason behind final keyword is to make entity non modifiable. It means when you make a variable or class or method as final you are not allowed to change that variable or class or method and compiler will verify this and gives compilation error if you try to re-initialized final variables in java.</p>
+<p style="font-size:20px;">The final keyword in java is used to give restriction to the user. The java final keyword can be used in many contexts. Final can be:</p>
+<ul>
+<li style="font-size:20px;">Variable</li>
+<li style="font-size:20px;">Method</li>
+<li style="font-size:20px;">Class</li>
+</ul>
+<br>
+
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">Fianl variable</h3></div>
+<br>
+<p style="font-size:20px;">Any variable which is declared by using the final keyword is called final variable. Final variables can be declare with static keyword in java and treated as constant. A final variable can only be explicitly assigned once.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Fianl variable</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class FinalVariable
+
+{
+
+   public static void main(String[] args)
+
+   {
+
+      final int hours=24;
+
+      System.out.println("Hours in 6 days = " + hours * 6);
+
+   }
+
+}
+
+//output
+	Hours in 6 days = 144
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">Fianl Method</h3></div>
+<br>
+<p style="font-size:20px;">Sometimes we may want to prevent a childclass to overriding a method from parentclass. To do this we use final keyword with method declaration. It means a method with final keyword is called final method. Final methods are faster than non-final methods because they are not required to be resolved during run-time and they are bonded on compile time.</p>
+<p style="font-size:20px;">The main reason behind making a method final would be that the content of the method should not be changed by any outsider.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Fianl Method</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class X
+
+{
+
+  final void getMethod()
+
+  {
+
+    System.out.println(“X method has been called”);
+
+  }
+
+}
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">Fianl Class</h3></div>
+<br>
+<p style="font-size:20px;">A class with final keyword is known as final class in java. Final class is complete in nature and cannot be inherited. Several classes in Java are final e.g. String, Integer and other wrapper classes.</p>
+<p style="font-size:20px;">The main purpose or reason of using a final class is to prevent the class from being subclassed. If a class is marked as final then no class can inherit any feature from the final class.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Fianl Class</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+final class X
+
+{
+
+  //properties and methods of class X
+
+}
+
+</pre>
+</div>
+<br>
+
+
+<div style="border:1px solid pink; padding:1px; font-size:20px;background-color:gray;">
+<h3 style="color:black">Importance of Fianl Keyword</h3></div>
+<br>
+<ul>
+<li style="font-size:20px;">Final keyword helps in improving performance.</li>
+<li style="font-size:20px;">Final variables are safely shared in multithreading environment without additional synchronization overhead.</li>
+<li style="font-size:20px;">Final keyword allows JVM to optimized method, variable or class.</li>
+</ul>
+
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

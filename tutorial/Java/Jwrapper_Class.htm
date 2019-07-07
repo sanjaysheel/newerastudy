@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Wrapper Class in java</h1>
+</div><br>
+<p style="font-size:20px;">A Wrapper class is a class whose object wraps or contains a primitive data types.</p>
+<p style="font-size:20px;">When we an object to a wrapper class,it contains a field and in this field,we can store a primitive data types.</p>
+<p style="font-size:20px;">In other words, we can wrap a primitive value into a wrapper class object.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >#Example Instance Initializer Block</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class WrapperExample
+{    
+public static void main(String args[])
+{    
+//Converting Integer to int    
+Integer a=new Integer(3);    
+int i=a.intValue();//converting Integer to int  
+int j=a;//unboxing, now compiler will write a.intValue() internally    
+    
+System.out.println(a+" "+i+" "+j);    
+}
+}
+
+//output
+		3 3 3
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

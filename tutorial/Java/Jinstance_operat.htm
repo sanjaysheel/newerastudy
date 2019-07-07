@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Instanceof Operator</h1>
+</div><br>
+<p style="font-size:20px;">In Java, instanceof operator is used to check the type of an object at runtime. It is the means by which your program can obtain run-time type information about an object. instanceof operator is also important in case of casting object at runtime. instanceof operator return boolean value, if an object reference is of specified type then it return true otherwise false.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Instanceof Operator</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class Test
+{
+    public static void main(String[] args)
+    {
+      Test t= new Test();
+      System.out.println(t instanceof Test);
+      }
+}
+
+//output
+	true
+
+</pre>
+</div>
+<br>
+
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Another Example of Instanceof Operator</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Parent{}
+
+class Child1 extends Parent{}
+
+class Child2 extends Parent{}
+
+class Test
+{
+  public static void main(String[] args)
+  {
+      Parent p =new Parent();
+      Child1 c1 = new Child1();
+      Child2 c2 = new Child2();
+
+      System.out.println(c1 instanceof Parent);		//true
+      System.out.println(c2 instanceof Parent);		//true
+      System.out.println(p instanceof Child1);		//false
+      System.out.println(p instanceof Child2);		//false
+
+      p = c1;
+      System.out.println(p instanceof Child1);		//true
+      System.out.println(p instanceof Child2);		//false
+
+      p = c2;
+      System.out.println(p instanceof Child1);		//false
+      System.out.println(p instanceof Child2);		//true
+
+   }
+
+}
+//output
+	true
+	true
+	false
+	false
+	true
+	false
+	false
+	true
+
+
+</pre>
+</div>
+<br>
+
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

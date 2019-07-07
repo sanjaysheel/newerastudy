@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Inheritance</h1></div>
+<br>
+<p style="font-size:20px;">In Java, it is possible to inherit attributes and methods from one class to another,is known as a inheritance.</p>
+<p style="font-size:20px;">The inheritance into two catagoies.</p>
+<ul>
+<li style="font-size:20px;"><b>subclass/childclass-</b> the class that inherits from another class</li>
+<li style="font-size:20px;"><b>superclass/parentclass-</b> the class being inherited from</li>
+</ul>
+<p style="font-size:20px;">To inherit from a class, use the extends keyword.</p>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Syntax of Inheritance</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Subclass-name extends Superclass-name  
+{  
+   //methods and fields  
+}  
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Inheritance</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class College
+{  
+ float salary=40000;  
+}  
+class Programmer extends Employee
+{  
+ int bonus=10000;  
+ public static void main(String args[])
+ {  
+   Programmer p=new Programmer();  
+   System.out.println("Programmer salary is:"+p.salary);  
+   System.out.println("Bonus of Programmer is:"+p.bonus);  
+}  
+}  
+
+//output
+	Programmer salary is:40000.0
+	Bonus of Programmer is:10000
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:1px;font-size:20px;background-color:gray;">
+<h3 style="color:black">Types of Inheritance</h3></div>
+<br>
+<ul>
+<li style="font-size:20px;">Single inheritance</il>
+<li style="font-size:20px;">Multilevel inheritance </il>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Singl Inheritance</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Parent
+{
+void ma()
+{
+System.out.println("Singl");
+}
+}
+class Child extends Parent
+{
+void mb()
+{
+System.out.println("Inheritance");
+}
+}
+class Demo
+{
+public static void main(String args[])
+{
+Child ob=new Child();
+ob.ma();
+ob.mb();
+}
+}
+
+//output
+	Singl
+	Inheritance
+
+</pre>
+</div>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Multilevel Inheritance</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+Class X
+{
+   public void methodX()
+   {
+     System.out.println("Class X method");
+   }
+}
+Class Y extends X
+{
+public void methodY()
+{
+System.out.println("class Y method");
+}
+}
+Class Z extends Y
+{
+   public void methodZ()
+   {
+     System.out.println("class Z method");
+   }
+   public static void main(String args[])
+   {
+     Z obj = new Z();
+     obj.methodX(); //calling grand parent class method
+     obj.methodY(); //calling parent class method
+     obj.methodZ(); //calling local method
+  }
+}
+
+//output
+	Class X method
+	Class Y method
+	Class Z method
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

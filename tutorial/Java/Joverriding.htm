@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Overriding</h1>
+</div><br>
+<p style="font-size:20px;">If subclass(child class) has the same method as declared in the parent class,it is known as method overloading in java.</p>
+<p style="font-size:20px;">In other word, If a subclass provides the specific implementation of the method that has been declared by one of its parent class,it is known as method overriding.</p>
+
+<div style="border:1 px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black;">Usage of Java Method Overriding</h3></div><br>
+<ul>
+<li style="font-size:20px;">Method overriding is used t  provide the specific implementation of a method which is already provide by its superclass.</li>
+<li style="font-size:20px;">Method overriding is used for runtime polymorphism.</li>
+ </ul>
+<br>
+
+<div style="border:1 px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black;">Rules of Java Method Overriding</h3></div><br>
+<ol>
+<li style="font-size:20px;">The method must have the same name as in the parent class.</li>
+<li style="font-size:20px;">The method must have the same parameter as in the parent class.</li>
+<li style="font-size:20px;">There must be an IS-A relationship(inheritance).</li>
+ </ol>
+<br>
+
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Overriding</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+class Human
+{
+   public void eat()
+   {
+      System.out.println("Human is eating");
+   }
+}
+class Boy extends Human
+{
+     public void eat()
+	 {
+      System.out.println("Boy is eating");
+   }
+   public static void main( String args[]) 
+   {
+      Boy obj = new Boy();
+       obj.eat();
+   }
+}
+
+//output is
+	Boy is eating
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

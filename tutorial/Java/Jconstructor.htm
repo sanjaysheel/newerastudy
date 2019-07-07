@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Java Constructor</h1></div>
+<br>
+<ul>
+<li style="font-size:20px;">A Constructor is a special method which initializes an object immediately upon creation.</li>
+<li style="font-size:20px;">It has the same name as class name in which it resides and it is syntactically similar to any method.</li>
+<li style="font-size:20px;">When a constructor is not defined,java executes a default constructor which initializes all numeric members to zero and other types to null or spaces.</li>
+<li style="font-size:20px;">Once defined, constructor is automatically called immediately after the object is created before new operator completes.</li>
+<li style="font-size:20px;">Constructor do not hava any return type.</li>
+</ul>
+<p style="font-size:20px;">There are two types of Constructor that is-</p>
+<ul>
+<li style="font-size:20px;">Default Constructor</li>
+<li style="font-size:20px;">Parametrized Constructor</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:1px;font-size:20px;background-color:gray;">
+<p style="font-size:20px;"><b>Default Constructor</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">A default constructor is a constructor that either has no parameters</li>
+<li style="font-size:20px;">If no user-defined constructor exists for a class A and one is needed, the compiler implicitly declares a default parameterless constructor A::A() .</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class Test
+{
+Test()//default constructor
+{
+System.out.println("This is a default constructor");
+}
+}
+class Demo
+{
+public static void main(String args[])
+{
+Test ob=new Test();
+}
+}
+
+//output-This is a default constructor
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:1px;font-size:20px;background-color:gray;">
+<p style="font-size:20px;"><b>Parametrized Constructor</b></p></div>
+<br>
+<ul>
+<li style="font-size:20px;">A Constructor with arguments(or you can say parameters) is known as Parameterized constructor.</li>
+<li style="font-size:20px;">We can have any number of Parameterized Constructor in our class.</li>
+</ul>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class Student
+{
+Student(int x)//parametrized constructor
+{
+System.out.println("This is a parametrized constructor");
+}
+}
+class Demo
+{
+public static void main(String args[])
+{
+Student ob = new Student(10);
+}
+}
+
+//output- This is a parametrized constructor
+</pre>
+</div>
+<br>
+<br>
+<div style="border:1px solid pink;padding:2px;font-size:20px;background-color:gray;">
+<h3 style="color:black">#Example of Constructor</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class ConstExample
+{
+ConstExample()
+{
+System.out.println("default constructor");
+}
+ConstExample(int x)
+{
+System.out.println("parametrized constructor");
+}
+}
+class Demo
+{
+public static void main(String args[])
+{
+ConstExample ob=new ConstExample();
+ConstExample ob=new ConstExample(5);
+}
+}
+
+//output is-
+	default constructor
+	parametrized constructor
+
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>

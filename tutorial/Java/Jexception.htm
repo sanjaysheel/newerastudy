@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+<body>
+<div style="border:1px solid pink;padding:3px;font-size:20px;background-color:gray;">
+<h1 style="color:black">Exception</h1>
+</div><br>
+<p style="font-size:20px;">An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions.</p>
+<p style="font-size:20px;"></p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Types of exceptions</h3></div>
+<br>
+<p style="font-size:20px;">There are two types of exceptions in Java:</p>
+<ol>
+<li style="font-size:20px;">Checked exceptions</li>
+<li style="font-size:20px;">Unchecked exceptions</li>
+</ol>
+<br>
+<h3><b>Checked exceptions</b></h3>
+<p style="font-size:20px;">All exceptions other than Runtime Exceptions are known as Checked exceptions as the compiler checks them during compilation to see whether the programmer has handled them or not. If these exceptions are not handled/declared in the program, you will get compilation error. For example, SQLException, IOException, ClassNotFoundException etc.</p>
+<br>
+<h3><b>Unchecked exceptions</b></h3>
+<p style="font-size:20px;">Runtime Exceptions are also known as Unchecked Exceptions. These exceptions are not checked at compile-time so compiler does not check whether the programmer has handled them or not but it’s the responsibility of the programmer to handle these exceptions and provide a safe exit. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Java Exception Keywords</h3></div>
+<br>
+<p style="font-size:20px;">There are 5 keywords which are used in handling exceptions in Java.</p>
+<br>
+<h3><b>try</b></h3>
+<p style="font-size:20px;">The "try" keyword is used to specify a block where we should place exception code. The try block must be followed by either catch or finally. It means, we can't use try block alone.
+</p>
+<br>
+<h3><b>Catch</b></h3>
+<p style="font-size:20px;">The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later.</p>
+<br>
+<h3><b>Finally</b></h3>
+<p style="font-size:20px;">The "finally" block is used to execute the important code of the program. It is executed whether an exception is handled or not.</p>
+<br>
+<h3><b>throw</b></h3>
+<p style="font-size:20px;">The "throw" keyword is used to throw an exception.</p>
+<br>
+<h3><b>throws</b></h3>
+<p style="font-size:20px;">The "throws" keyword is used to declare exceptions. It doesn't throw an exception. It specifies that there may occur an exception in the method. It is always used with method signature.</p>
+<br>
+<div style="border:1px solid pink; padding:2px; font-size:20px;background-color:gray;">
+<h3 >Java Exception Handling Example</h3></div>
+<br>
+<div style="padding-left: 3%; padding-right:640px;">
+<pre>
+public class ExceptionExample
+{  
+  public static void main(String args[])
+  {  
+   try
+   {  
+      //code that may raise exception  
+      int data=10/0;  
+   }
+   catch(ArithmeticException e)
+   {
+   System.out.println(e);
+   }  
+   //rest code of the program   
+   System.out.println("rest of the code...");  
+  }  
+} 
+
+//output
+
+Exception in thread main java.lang.ArithmeticException:/ by zero
+rest of the code...
+</pre>
+</div>
+<br>
+<div class="container">
+  		<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+</body>
+</html>
